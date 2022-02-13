@@ -1,0 +1,37 @@
+.MorningBuzz {
+  height: 100vh;
+  width: 815px;
+  margin-left: 20px;
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(75, 75, 75); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(73, 73, 73); /* creates padding around scroll thumb */
+}
+
+.Frame {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 200px;
+
+  background-color: white;
+  width: 29%;
+  height: 90%;
+}
+@media screen and (max-width: 1366px) {
+  .Frame {
+    position: relative;
+    width: 60%;
+    height: 50%;
+    margin-left: 100px;
+  }
+}
