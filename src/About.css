@@ -1,45 +1,205 @@
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 19%;
+  margin-bottom: 16px;
+  padding: 0 8px;
 }
 
-.flip-card-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+/* Display the columns below each other instead of side by side on small screens */
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(219, 5, 191, 0.192);
+  background-color: rgb(255, 255, 255);
   text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
   width: 100%;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  font-size: 17px;
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(233, 0, 0);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: rgb(0, 202, 253);
+}
+.img {
+  height: 50%;
+  width: 60%;
+}
+/* For smaller images uses this CSS: */
+.img2 {
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  width: 100%;
+}
+.img3 {
+  height: 20%;
+  width: 40%;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+.HTMLdiv {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  border: 10px solid #006eff;
+  background: #00d9ff;
+  margin: 10px;
+  font-size: 2rem;
 }
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
+.CSSdiv {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  border: 10px solid #ffbb00;
+  background: #fffb00;
+  margin: 10px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  font-size: 2rem;
+  color: rgb(0, 225, 255);
+  text-shadow: 1px 1px 2px rgb(255, 0, 255), 0 0 25px rgb(0, 0, 255),
+    0 0 5px rgb(9, 255, 0);
 }
+.JavaScriptdiv {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  height: 120px;
+  border: 10px solid #15ff00;
+  background: #00ff6a;
+  margin: 10px;
+  font-size: 2rem;
+}
+.HomeLink {
+  color: #000000;
+}
+.HomeLink:hover {
+  opacity: 0.5;
+}
+.HTMLbutton {
+  margin-left: 25px;
+  margin-bottom: 15px;
+  background-color: #000;
 
-.image {
-  width: 300px;
-  height: 300px;
+  border-style: none;
+  width: 170px;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.HTMLbutton:hover {
+  background: rgb(204, 0, 255);
+}
+.CSSbutton {
+  margin-left: 25px;
+  margin-bottom: 15px;
+
+  background-image: linear-gradient(
+    92.88deg,
+    #f30808 9.16%,
+    #b806ff 43.89%,
+    #0019fd 64.72%
+  );
+
+  border-style: none;
+  width: 170px;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.CSSbutton:hover {
+  background: #000;
+}
+.JSbutton {
+  margin-left: 25px;
+  margin-bottom: 15px;
+
+  background-color: rgb(255, 153, 0);
+
+  border-style: none;
+  width: 170px;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.JSbutton:hover {
+  background-color: #ffffff;
+  color: #00ff6a;
+}
+/* This media quierry is to set the CSS properties on a typical ASUS chromebook */
+@media screen and (max-width: 1366px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }

@@ -1,0 +1,77 @@
+.Panel {
+  position: absolute;
+  margin-top: 0.1%;
+  margin-left: 55%;
+
+  width: 45%;
+  height: 40%;
+}
+
+.QuoteButton {
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgb(115, 255, 0);
+  font-size: 16px;
+  font-weight: 500;
+  height: 3rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  border-style: none;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  letter-spacing: 1.5px;
+}
+.FreezeButton {
+  display: inline-block;
+  background-color: rgb(0, 247, 255);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  height: 3rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  letter-spacing: 1px;
+  border-style: none;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.QuoteBlock {
+  background-color: beige;
+  height: 40vh;
+  width: 40vw;
+  position: relative;
+}
+.QuoteButton:hover {
+  opacity: 0.6;
+}
+.FreezeButton:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1366px) {
+  .QuoteBlock {
+    position: sticky;
+    width: 60vw;
+    height: 40vh;
+    left: 10%;
+    top: 10%;
+    opacity: 0.5;
+  }
+}
