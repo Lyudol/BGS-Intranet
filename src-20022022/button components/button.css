@@ -1,0 +1,61 @@
+/*
+these properties style buttons
+use it by setting the element className to "Button"
+e.g. <button className="Button"></button>
+*/
+
+.Button {
+  margin-left: 25px;
+  margin-bottom: 15px;
+
+  background-image: linear-gradient(
+    92.88deg,
+    #f37908 9.16%,
+    #ffae00 43.89%,
+    #ff9f0e 64.72%
+  );
+  border-radius: 15px;
+  border-style: none;
+  width: 170px;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.Button:hover {
+  background: darkgreen;
+}
+.panel {
+  padding: 0 18px;
+  background-color: rgb(49, 49, 49);
+  display: block;
+  overflow: hidden;
+  text-align: left;
+}
+
+.link {
+  text-decoration: none;
+  color: #008cba;
+}
+.Icon {
+  width: 35%;
+  height: 10%;
+  cursor: pointer;
+  border-radius: 10%;
+}
+.Icon:hover {
+  background: green;
+}
