@@ -1,0 +1,26 @@
+-Downloaded and installed Node.js
+-Dowloaded React
+-Created a new react app
+-To view your react componets as they would appear if someone were to view it like a website:
+make sure you are in the folder where your source folder is: e.g. intranet v9 and open a terminal
+window and type npm start.
+-Added header component 
+-Styled Header component
+-Added Buttons on the side for popular subjects
+-Buttons are part of a buttons div
+-Embedded a place holder google document for the Buzz
+-Added report to your school council button
+-Added subject buttons for all subjects along with dedicated buttons for popular sites
+-Embedded Morning buzz google document
+-Embedded a new Top Stories RSS feed from the BBC using feedgrabbr API
+-Reordered buttons alphabetically after recieving negative feedback suggesting subject marginalisation
+-Removed dedicated buttons for popular sites such as MyMaths, Drfrost. Etc
+-Instead added them under their respective subject panels
+-Added About intranet "webpage" illusion using react router 
+-React cannot render more than one HTML file per app but it can render different react componets
+which is how react router simply routes user to a different react componet path
+https://v5.reactrouter.com/web/guides/quick-start visit for how to use 
+-Added House Quotes feature which uses typed.js javascript library to type out hard coded Quotes
+https://mattboldt.com/demos/typed-js/ look here for how to use it
+- Changed main buttons to icons as recieved negative feedback regarding the dated look of the 
+specific subject buttons(the gold ones)
